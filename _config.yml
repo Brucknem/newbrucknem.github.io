@@ -21,12 +21,19 @@ timezone: Europe/Berlin
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+title: Marcel Bruckner      # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: >-             # used by seo meta and the atom feed
+  Hi there, I'm a master's student in Informatics: Games Engineering at TUM,
+  Germany. My interests are Computer Vision and Machine Learning with a focus on
+  beautiful and nice code. I work at CQSE, a great company focused on software
+  engineering and code quality.
 
-description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+description: >-             # used by seo meta and the atom feed
+  Hi there, I'm a master's student in Informatics: Games Engineering at TUM,
+  Germany. My interests are Computer Vision and Machine Learning with a focus on
+  beautiful and nice code. I work at CQSE, a great company focused on software
+  engineering and code quality.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brucknem.github.io'
@@ -79,10 +86,10 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://raw.githubusercontent.com/Brucknem/CDN/main/blog
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 
+avatar: /me_square.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
