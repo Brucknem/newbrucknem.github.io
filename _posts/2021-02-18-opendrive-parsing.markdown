@@ -11,7 +11,7 @@ image:
     caption: A part of the the highway A9 near Munich in a HD map.
 opendrive_url: https://www.asam.net/index.php?eID=dumpFile&t=f&f=3495&token=56b15ffd9dfe23ad8f759523c806fc1f1a90a0e8#
 math: true
-post_cdn: /posts/2021-02-16-opendrive-parsing/
+post_cdn: /blog/posts/2021-02-16-opendrive-parsing/
 ---
 
 During my [Guided Research]({% post_url 2021-02-12-guided-research %}) I was given some HD maps of some part of the [highway A9 near Munich, Germany](https://www.google.de/maps/place/A9,+Garching+bei+M%C3%BCnchen/@48.2395578,11.632844,4154m/data=!3m1!1e3!4m5!3m4!1s0x47a11d231dc12da1:0xd702677ee0331ed4!8m2!3d48.2385588!4d11.637908).

@@ -24,16 +24,21 @@ timezone: Europe/Berlin
 title: Marcel Bruckner      # the main title
 
 tagline: >-             # used by seo meta and the atom feed
-  Hi there, I'm a master's student in Informatics: Games Engineering at TUM,
-  Germany. My interests are Computer Vision and Machine Learning with a focus on
-  beautiful and nice code. I work at CQSE, a great company focused on software
-  engineering and code quality.
+  Hi there, I'm a master's graduate in 
+  <a href="https://www.tum.de/en/studies/degree-programs/detail/informatics-games-engineering-master-of-science-msc">Informatics: Games Engineering</a> 
+  at 
+  <a href="https://www.in.tum.de/en/in/cover-page/">TUM</a>, Germany.
+  My interests are 
+  <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Brucknem/CDN/main/master-thesis.pdf">Computer Vision and Deep Reinforcement Learning</a>
+  with a passion for maintanable and future-proof code. I work as a 
+  <a href="https://www.cqse.eu/de/company/team/marcel-bruckner/">Software Consultant</a> 
+  at 
+  <a href="https://www.cqse.eu/de/">CQSE</a>,
+  a great company focused on 
+  <a href="https://www.cqse.eu/en/teamscale/overview/">Software Intelligence</a>.
 
 description: >-             # used by seo meta and the atom feed
-  Hi there, I'm a master's student in Informatics: Games Engineering at TUM,
-  Germany. My interests are Computer Vision and Machine Learning with a focus on
-  beautiful and nice code. I work at CQSE, a great company focused on software
-  engineering and code quality.
+  Personal website of Marcel Bruckner.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://brucknem.github.io'
@@ -86,7 +91,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: https://raw.githubusercontent.com/Brucknem/CDN/main/blog
+img_cdn: https://raw.githubusercontent.com/Brucknem/CDN/main
 
 # the avatar on sidebar, support local or CORS resources
 avatar: /me_square.jpg

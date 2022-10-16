@@ -2,7 +2,7 @@
 layout: post
 title:  "How to install mujoco-py and robosuite"
 date:   2021-07-21 10:20:00 +0200
-categories: Install
+categories: Installation
 tags: coding tutorials install
 pin: false
 ---
