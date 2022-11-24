@@ -37,7 +37,7 @@ sudo pacman -Syu alacritty
 
 ## Yay
 
-See {% post_url 2022-11-24-install-yay %}
+See [how to install yay]({% post_url 2022-11-24-install-yay %})
 
 # Important
 
