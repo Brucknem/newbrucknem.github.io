@@ -3,7 +3,7 @@ layout: post
 title:  "Ricing arch: How I setup my arch system"
 date:   2022-11-24 12:45:00 +0100
 categories: Arch-Linux
-tags: tutorials arch rice ricing 
+tags: tutorials arch ricing 
 pin: false
 toc: true
 yay_needed: "[Yay](#yay) has to be installed!"
@@ -15,16 +15,16 @@ yay_needed: "[Yay](#yay) has to be installed!"
 ## KDE Plasma and SDDM
 ```zsh
 # Install KDE Plasma
-pacman -Syu plasma-meta       # Confirm everything with Enter
+sudo pacman -Syu plasma-meta       # Confirm everything with Enter
 
 # Optional: Install the KDE apps that are well integrated into KDE
-pacman -Syu kde-applications  # Confirm everything with Enter
+sudo pacman -Syu kde-applications  # Confirm everything with Enter
 
 # Install SDDM
-pacman -Syu sddm              # Confirm everything with Enter
+sudo pacman -Syu sddm              # Confirm everything with Enter
 
 # Enable the display manager; This starts the graphical user interface of KDE Plasma
-systemctl enable --now sddm
+sudo systemctl enable --now sddm
 ```
 
 ## A terminal emulator
@@ -34,6 +34,7 @@ If you installed the `kde-applications` the terminal `konsole` is included.
 Nonetheless, I prefer [`alacritty`](https://github.com/alacritty/alacritty) as a terminal emulator:
 
 ```zsh
+# Install the alacritty package
 sudo pacman -Syu alacritty
 ```
 
@@ -63,7 +64,6 @@ yay -S google-chrome
 ```zsh
 # Install the package
 yay -S 1password
-
 ```
 
 # Nice to have
