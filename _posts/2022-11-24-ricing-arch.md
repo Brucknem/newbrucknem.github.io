@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ricing arch: How I setup my arch system"
-date:   2022-11-23 13:30:00 +0100
+date:   2022-11-24 12:45:00 +0100
 categories: Arch-Linux
 tags: tutorials arch rice ricing 
 pin: false

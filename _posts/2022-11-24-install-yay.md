@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Install Yay: Yet another yogurt"
-date:   2022-11-23 12:30:00 +0100
+date:   2022-11-24 12:30:00 +0100
 categories: Arch-Linux
 tags: tutorials arch packages yay
 pin: false
