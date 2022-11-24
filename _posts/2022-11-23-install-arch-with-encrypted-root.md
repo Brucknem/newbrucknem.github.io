@@ -65,9 +65,6 @@ mkfs.ext4 -L "boot" /dev/nvme0n1p7  # Confirm with 'y' if asked
 
 ## Create the encrypted root partition
 ```zsh
-# Load encryption module
-modprobe dm-crypt
-
 # Encrypt root partition
 # Confirm with 'YES'; The passphrase is asked on every startup to decrypt the partition
 cryptsetup luksFormat --type luks2 /dev/nvmn0n1p8 
@@ -107,7 +104,7 @@ arch-chroot /mnt
 ## Configure the new arch system
 ```zsh
 # Set timezone
-ln -sf /usr/share/zoneinfo/Berlin/Europe /etc/localtime  # Replace with your location
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime  # Replace with your location
 
 # Sync time
 hwclock --systohc --utc
@@ -127,6 +124,23 @@ echo ::1        localhost arch >> /etc/hosts
 passwd
 ```
 
+## Create your user
+```zsh
+# Add your user
+useradd -m -G wheel bruckner  # Replace with your username
+passwd bruckner               # The user password for login etc.
+
+# Give the 'wheel' group 'sudo' permission
+EDITOR=vim visudo
+# Uncomment the line # %wheel ALL=(ALL:ALL) ALL
+```
+
+## Permanently enable networking
+```zsh
+# Autostart the networkmanager on boot
+systemctl enable --now NetworkManager
+```
+
 ## Install the GRUB bootloader
 ```zsh
 # Install packages
@@ -134,12 +148,10 @@ pacman -Syu grub efibootmgr
 
 # Adjust grub for encrypted root partition
 vim /etc/default/grub
-
 # Change: GRUB_CMDLINE_LINUX="" to GRUB_CMDLINE_LINUX="cryptdevice=/dev/nvme0n1p8:archlinux"
 
 # Adjust the mkinitcpio.conf
 vim /etc/mkinitcpio.conf
-
 # Change: HOOKS=(... block ...) to HOOKS=(... block encrypt ...)
 
 # Generate the mkinitcpio
@@ -174,24 +186,6 @@ exit
 reboot
 ```
 
-## Create your user
-```zsh
-# Add your user
-useradd -m -G wheel bruckner  # Replace with your username
-passwd bruckner               # The user password for login etc.
-
-# Give the 'wheel' group 'sudo' permission
-EDITOR=vim visudo
-
-# Uncomment the line # %wheel ALL=(ALL:ALL) ALL
-```
-
-## Enable networking
-```zsh
-# Autostart the networkmanager
-systemctl enable --now NetworkManager
-```
-
 ## Install KDE Plasma
 ```zsh
 # Install Plasma
@@ -201,7 +195,7 @@ pacman -Syu plasma-meta       # Confirm everything with Enter
 pacman -Syu kde-applications  # Confirm everything with Enter
 ```
 
-## Install the display manager
+## Install the SDDM display manager
 ```zsh
 # Install SDDM
 pacman -Syu sddm       # Confirm everything with Enter
