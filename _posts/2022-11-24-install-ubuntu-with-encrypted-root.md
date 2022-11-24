@@ -15,7 +15,7 @@ toc: true
 
 # Acknowledgements
 
-I'm following the [great tutorial](https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html) of [Mike Kasberg](mikekasberg.com) on how to install Ubuntu in a dual boot setup with windows. 
+I'm following the [great tutorial](https://www.mikekasberg.com/blog/2020/04/08/dual-boot-ubuntu-and-windows-with-encryption.html) of [Mike Kasberg](https://mikekasberg.com) on how to install Ubuntu in a dual boot setup with windows. 
 
 Thank you Mike for the only really working tutorial out there. :raised_hands::raised_hands::raised_hands:
 
