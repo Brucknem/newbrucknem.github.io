@@ -185,21 +185,3 @@ exit
 # Reboot the computer
 reboot
 ```
-
-## Install KDE Plasma
-```zsh
-# Install Plasma
-pacman -Syu plasma-meta       # Confirm everything with Enter
-
-# Install the KDE apps
-pacman -Syu kde-applications  # Confirm everything with Enter
-```
-
-## Install the SDDM display manager
-```zsh
-# Install SDDM
-pacman -Syu sddm       # Confirm everything with Enter
-
-# Enable the display manager; This starts the graphical user interface of Plasma
-systemctl enable --now sddm
-```
