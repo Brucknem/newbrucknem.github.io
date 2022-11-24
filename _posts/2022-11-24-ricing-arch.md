@@ -6,6 +6,8 @@ categories: Arch-Linux
 tags: tutorials arch rice ricing 
 pin: false
 toc: true
+yay_needed: "[Yay](#yay) has to be installed!"
+
 ---
 
 # Essential
@@ -47,12 +49,24 @@ See [how to install yay]({% post_url 2022-11-24-install-yay %})
 
 ## Google Chrome
 
-[Yay](#yay) has to be installed!
+{{ page.yay_needed }}
 
 ```zsh
 # Install Google Chrome
 yay -S google-chrome
 ```
+
+## 1password
+
+{{ page.yay_needed }}
+
+```zsh
+# Install the package
+yay -S 1password
+
+```
+
+# Nice to have
 
 ## fish: friendly interactive shell
 ```zsh
@@ -91,6 +105,3 @@ Close and reopen the terminal.
 ### Further infos
 
 - [Official documentation](https://starship.rs/de-DE/)
-
-# Nice to have
-tdb!
