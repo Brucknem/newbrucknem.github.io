@@ -111,6 +111,7 @@ hwclock --systohc --utc
 
 # Generate and select locales
 vim /etc/locale.gen  # Uncomment the lines you need, e.g. de_DE.UTF-8
+locale-gen           # Generate the locales
 echo LANG=de_DE.UTF-8 > /etc/locale.conf    # Same as above
 echo KEYMAP=de-latin1 > /etc/vconsole.conf  # Select the langugage you need
 
@@ -133,12 +134,6 @@ passwd bruckner               # The user password for login etc.
 # Give the 'wheel' group 'sudo' permission
 EDITOR=vim visudo
 # Uncomment the line # %wheel ALL=(ALL:ALL) ALL
-```
-
-## Permanently enable networking
-```zsh
-# Autostart the networkmanager on boot
-systemctl enable --now NetworkManager
 ```
 
 ## Install the GRUB bootloader
@@ -185,3 +180,13 @@ exit
 # Reboot the computer
 reboot
 ```
+
+## Permanently enable networking
+```zsh
+# Autostart the networkmanager on boot
+systemctl enable --now NetworkManager
+```
+
+## How to rice the bare system to a useful arch system
+
+[Ricing Arch]({% post_url 2022-11-24-ricing-arch %})

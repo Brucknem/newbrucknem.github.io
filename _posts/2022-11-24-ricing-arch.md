@@ -13,6 +13,12 @@ yay_needed: "[Yay](#yay) has to be installed!"
 # Essential
 
 ## KDE Plasma and SDDM
+
+Before you proceed: If you decide to not install the `kde-applications`, first install [a terminal emulator](#a-terminal-emulator).  
+If you forgot to install it before starting KDE Plasma you won't be able to access a terminal easily.  
+
+BUT: You can always hit `CTRL+ALT+F2` to start a login shell and bypass the display manager or desktop environment.
+
 ```zsh
 # Install KDE Plasma
 sudo pacman -Syu plasma-meta       # Confirm everything with Enter
