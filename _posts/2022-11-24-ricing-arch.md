@@ -70,6 +70,10 @@ sudo vim /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ``` 
 
+## Nvidia
+
+See my [Nvidia @ Arch]({% post_url nvidia-on-arch %}) tutorial.
+
 # Important
 
 ## Google Chrome
