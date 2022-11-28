@@ -38,13 +38,31 @@ Nonetheless, I prefer [`alacritty`](https://github.com/alacritty/alacritty) as a
 sudo pacman -Syu alacritty
 ```
 
+## Yay
+
+[Yay](https://github.com/Jguer/yay) is my preferred [AUR](https://aur.archlinux.org/) helper. 
+
+See [how to install yay]({% post_url 2022-11-24-install-yay %})
+
 ### Further infos
 
 - [Official documentation](https://github.com/alacritty/alacritty)
 
-## Yay
+## os-prober
 
-See [how to install yay]({% post_url 2022-11-24-install-yay %})
+To dual boot with windows, `Grub` needs an extra package to detect the Windows bootloader.
+
+```zsh
+# Install package
+sudo pacman -Syu os-prober
+
+# Enable os-prober in GRUB
+# Uncomment the line #GRUB_DISABLE_OS_PROBER=false
+sudo vim /etc/default/grub
+
+# Regenerate the grub config
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+``` 
 
 # Important
 
