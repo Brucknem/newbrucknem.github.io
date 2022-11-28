@@ -72,7 +72,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Nvidia
 
-See my [Nvidia @ Arch]({% post_url nvidia-on-arch %}) tutorial.
+See my [Nvidia @ Arch]({% post_url 2022-11-28-nvidia-on-arch %}) tutorial.
 
 # Important
 
