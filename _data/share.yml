@@ -2,6 +2,7 @@
 #  Icons from <https://fontawesome.com/>
 
 platforms:
+<<<<<<< HEAD
   -
     type: Twitter
     icon: "fab fa-twitter"
@@ -12,10 +13,22 @@ platforms:
     link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
   -
     type: Telegram
+=======
+  - type: Twitter
+    icon: "fab fa-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+
+  - type: Facebook
+    icon: "fab fa-facebook-square"
+    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+
+  - type: Telegram
+>>>>>>> template/main
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
 
   # Uncomment below if you need to.
+<<<<<<< HEAD
   # -
   #   type: Linkedin
   #   icon: "fab fa-linkedin"
@@ -23,5 +36,13 @@ platforms:
   #
   # -
   #   type: Weibo
+=======
+  #
+  # - type: Linkedin
+  #   icon: "fab fa-linkedin"
+  #   link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
+  #
+  # - type: Weibo
+>>>>>>> template/main
   #   icon: "fab fa-weibo"
   #   link: "http://service.weibo.com/share/share.php?title=TITLE&url=URL"
