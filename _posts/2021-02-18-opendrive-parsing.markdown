@@ -6,7 +6,7 @@ categories: Studies
 tags: coding guided-research autonomous-driving
 pin: false
 image: 
-    src: /posts/2021-02-16-opendrive-parsing/highway_exit_south.png
+    path: /blog/posts/2021-02-16-opendrive-parsing/highway_exit_south.png
     alt: A part of the the highway A9 near Munich in a HD map.
     caption: A part of the the highway A9 near Munich in a HD map.
 opendrive_url: https://www.asam.net/index.php?eID=dumpFile&t=f&f=3495&token=56b15ffd9dfe23ad8f759523c806fc1f1a90a0e8#
